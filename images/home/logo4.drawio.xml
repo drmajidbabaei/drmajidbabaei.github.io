@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2022-05-20T00:55:30.546Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="ra4oU9zJ9nEMEaQ_PtAr" version="18.0.8">
+  <diagram id="etNqT0bQUPXkj23zkjb7" name="Page-1">
+    <mxGraphModel dx="1038" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GV_92pGTjidX0dI4lQro-17" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="340" y="203" width="130" height="157" as="geometry" />
+        </mxCell>
+        <mxCell id="GV_92pGTjidX0dI4lQro-15" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;strokeWidth=0;fillColor=#FFFF00;gradientDirection=west;dashed=1;strokeColor=#d6b656;" vertex="1" parent="GV_92pGTjidX0dI4lQro-17">
+          <mxGeometry width="130" height="157" as="geometry" />
+        </mxCell>
+        <mxCell id="GV_92pGTjidX0dI4lQro-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/essential-pack/32/24-Computer-Process-128.png" vertex="1" parent="GV_92pGTjidX0dI4lQro-17">
+          <mxGeometry x="42.25" y="38.326470588235296" width="56.33529411764706" height="56.33529411764706" as="geometry" />
+        </mxCell>
+        <mxCell id="GV_92pGTjidX0dI4lQro-8" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/bootstrap-vol-3/16/filetype-ai-128.png;fillColor=default;gradientColor=#ffffff;gradientDirection=west;" vertex="1" parent="GV_92pGTjidX0dI4lQro-17">
+          <mxGeometry x="11.142857142857142" y="7.3882352941176475" width="118.21176470588236" height="118.21176470588236" as="geometry" />
+        </mxCell>
+        <mxCell id="GV_92pGTjidX0dI4lQro-14" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;SWE&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="GV_92pGTjidX0dI4lQro-17">
+          <mxGeometry x="30.642857142857142" y="12.005882352941176" width="55.714285714285715" height="27.705882352941178" as="geometry" />
+        </mxCell>
+        <mxCell id="GV_92pGTjidX0dI4lQro-16" value="&lt;font color=&quot;#999999&quot; size=&quot;1&quot; face=&quot;Georgia&quot;&gt;&lt;b style=&quot;font-size: 15px;&quot;&gt;SWEAILab&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=17;" vertex="1" parent="GV_92pGTjidX0dI4lQro-17">
+          <mxGeometry x="37.60714285714286" y="129.29411764705884" width="55.714285714285715" height="27.705882352941178" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
