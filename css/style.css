@@ -214,6 +214,9 @@ h5 {
 .gray-bg {
     background-color: #f7f7f7
 }
+.black-bg {
+    background-color: #000000
+}
 .gray2-bg {
     background-color: #DCDCDC
 }
@@ -919,7 +922,7 @@ a.totop-link {
    #Last Screen
    ========================================================================== */
 .introduction-end {
-    background: url(http://placehold.it/1608x1080/000)no-repeat right top;
+    background: url(../images/home/introEnd.png)no-repeat right top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -929,7 +932,6 @@ a.totop-link {
 .introduction-end-con {
     float: right;
     margin: 30% 0 0;
-    width: 30%;
 }
 .introduction-end-con h3 {
     font-size: 55px;
