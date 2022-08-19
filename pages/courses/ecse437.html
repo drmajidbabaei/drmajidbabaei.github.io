@@ -6,7 +6,7 @@
 <style>
 h3
 {
-padding-top: 80px;
+padding-top: 30px;
 padding-bottom: 30px;
 }
 </style>
@@ -55,20 +55,32 @@ animation: blink .75s linear infinite;
 }
 /* @end */
 -->
+.subtitle-divider-5 {
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 30px 0 50px 0
+}
+.subtitle-divider-2 {
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 30px 0 50px 0
+}
 </style>
 
 
 <body style="
-padding: 80px;
+padding: 10px;
 color:#000f00;
 font-family: 'IBM Plex Mono', monospace;
 background-color: #e0e0d8;"
 >
-&nbsp;
-<center><h1>McGill University, Montral, QC, Canada</h1></center>
+<center><img src="../../images/home/mcgilllog.png" atl="mcgill logo" width="370" height="130"></center>
 <center><h1>ECSE 437: Software Delivery</h1></center>
+<center><h1>McGill University, Montral, Canada</h1></center>
 <center><h1><font size="+2">Fall 2022</font></h1></center>
-
+<div class="subtitle-divider-5"></div>
 
 
 
@@ -76,36 +88,39 @@ background-color: #e0e0d8;"
 <p style="text-align:justify;">
     Design, development, and implementation of code integration processes, release pipelines, and deployment strategies. </p>
 
+<div class="subtitle-divider-2"></div>
+
 <h3>Instructor</h3>
 
-
 <p>
-<strong>Dr. Majid Babei</strong><br>
-Email address: <a href="mailto:majid.babaei@mcgill.ca">majid.babaei@mcgill.ca</a>,<br>
-Personal website:<a href="...">....</a>,<br>
-<!-- Lab: Queen's Reliable Software Technology,<br>
-Office: Goodwin 631,<br>
+<strong>Dr. Majid Babei</strong></br>
+Email address: <a href="mailto:majid.babaei@mcgill.ca">majid.babaei@mcgill.ca</a>,</br>
+Personal website:<a href="http://www.majidbabaei.com">www.majidbabaei.com</a>,</br>
+<!-- Lab: Queen's Reliable Software Technology,</br>
+Office: Goodwin 631,</br>
 Department: School of Computing.
-<br> 
+</br> 
 <ul>
 Online live Sessions, over Microsoft Teams, are held on Mondays 12:30pm and Thursdays 1:30pm. These sessions, usually,
 run for an hour. However, they may also run for less than an hour in case there are no further questions or discussions.
-<br><br>
+</br></br>
 Lecture slides will be posted over OnQ. If you have questions and need clarifications about the lecture slides, then the live sessions will be the perfect location to get your questions answered and
 clarified.
 </ul>
 -->
+</p>
+<div class="subtitle-divider-2"></div>
 
 <h3> Teaching Assistants </h3>
-
+<p>TBA</p>
+<!--
 <p>The teaching assistants answer questions by email and/or during dedicated live sessions (upon request):
-<br>
+</br>
 
-<p><strong>AAAA BBBB (Ph.D. student)</strong>, <br><a href="mailto:BBBB">BBBB</a>
-<br>
-
-
-
+<p><strong>AAAA BBBB (Ph.D. student)</strong>, </br><a href="mailto:BBBB">BBBB</a>
+</br>
+-->
+<div class="subtitle-divider-2"></div>
 
 
 
@@ -113,18 +128,41 @@ clarified.
 
 <h3>Course Textbook</h3>
 <p style="text-align:justify;">
-Operating System Concepts,
-Ninth Edition (or newer), by Silberschatz, Galvin and Gagne, published by John Wiley. The eighth edition of this textbook is acceptable as well.
-The publisher provides various resources on the <a href="http://www.os-book.com">
-textbook website</a>: click on the image of the textbook to find C/Java source code, a study guide, solutions to practice exercises, review questions, etc.
+I will be using a series of the textbooks to teach this course:
+<ol>
+    <li>
+        <a href="https://www.amazon.ca/Learning-DevOps-accelerate-collaboration-Kubernetes/dp/1838642730">Learning DevOps: The complete guide to accelerate collaboration with Jenkins, Kubernetes, Terraform and Azure DevOps</a>
+    </li>
+    <li>
+        <a href="https://www.amazon.ca/GitLab-Cookbook-Jeroen-van-Baarsen/dp/1783986840">GitLab Cookbook</a>
+    </li>
+    <li>
+        <a href="https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf"> CODE REVIEW GUIDE - OWASP Foundation </a>
+    </li>
+    <li>
+        <a href="https://www.amazon.ca/Learning-Gerrit-Code-Review-Milanesio/dp/1783289473">Learning Gerrit Code Review</a>
+    </li>
+    <li>
+        <a href="https://www.amazon.ca/Software-Build-Systems-Principles-Experience/dp/013418596X">Software Build Systems: Principles and Experience</a>
+    </li>
+    <li>
+        <a href="https://cs.au.dk/~amoeller/spa/spa.pdf">Static Program Analysis</a>
+    </li>
+    <li>
+        <a href="https://valbrio.com/wp-content/uploads/AdvancedStaticAnalysisforCC_May2017.pdf">ADVANCED STATIC ANALYSIS FOR C/C++</a>
+    </li>
+    <li>
+        <a href="https://www.amazon.ca/Introduction-Software-Testing-Paul-Ammann/dp/0521880386">Introduction to Software Testing</a>
+    </li>
+    <li>
+        <a href="https://martinfowler.com/books/continuousDelivery.html">Continuous Delivery</a>
+    </li>
+    <li>
+        <a href="https://www.amazon.ca/Learning-Continuous-Integration-Jenkins-Second/dp/1788479351">Learning Continuous Integration with Jenkins</a>
+    </li>
+</ol>
 </p>
-
-<h3>Course Workload</h3>
-<p style="text-align:justify;">
-The course consists of 11 weeks of lectures (online sides + live sessions), 6 assignments (Q&As), 6 labs (Coding), and 2 term exams. The course grade distribution is presented in the last section of
-this page (<a href="#bottom">see bottom</a>).
-</p>
-
+<div class="subtitle-divider-2"></div>
 
 
 
@@ -147,15 +185,20 @@ this page (<a href="#bottom">see bottom</a>).
 <p style="font-size:150%;color: #ffffff; background-color: #000000;text-align:center"><strong> Course started in the 1st of Septmber, 2022</strong></p>
 <strong>Course info: Introduction, DevOps Culture and Practices. </strong>
 
-<br> <!-- content -->
-- a.</br>
-- b.</br>
-- c </br>
+</br> <!-- content -->
+- When the term is introduced and how does it work!</br>
+- Test-Driven Desing</br>
+- Collecting feedback from users </br>
+- Three axes of the DevOps movment </br>
+- How do Continues Integeration (CI) and Continuous delivery (CD) work? </br>
+- Implementing CI and CD </br>
+- Understanding IaC practices </br>
+
 <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-<center><a href="">Lecture_01</a><center><br>
+<center><a href="#">Lecture_01</a><center></br>
 
 <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
-<center>1, 2, and 3.1-3.3.</center>
+<center>Learning DevOps: </br> Sections 1 and 2</center>
 
 </tr>
 
@@ -165,398 +208,394 @@ this page (<a href="#bottom">see bottom</a>).
 <th BGCOLOR="WHITE">2
 <td BGCOLOR="WHITE">Sept. 6, 8.
 <td BGCOLOR="WHITE" rowspan="1">
-<strong>Course info: GIT1. </strong>
+<center><p style="color: #ffffff; background-color: #ff0000"><strong>Lab1 [due Sept. 20th at 9:00AM]</strong></p></center>
 
-<br> <!-- content -->
-- a.</br>
-- b.</br>
-- c </br>
+<strong>Version Control Systems </strong>
+
+</br> <!-- content -->
+- Centralized vs. distributed VCS</br>
+- What is Git ?</br>
+- Git vocabulary</br>
+- Git Repository Structure</br>
+- Git Command lines (e.g., add, commit, diff, amend, merge, ect.)</br>
+- Managing branches</br>
+<center>************</center></br>
+- Git Command lines in more details!
+- Commit Object Structure</br>
+- Resetting Branches </br>
+- Non-reachable Commits </br>
+- Detached HEAD </br>
+- tags </br>
 <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-<center><a href="">Lecture_02</a><center><br>
+<center><a href="">Lecture_02</a><center></br>
+<center><a href="">Lecture_03</a><center></br>
 
 <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
-<center>1, 2, and 3.1-3.3.</center>
+<center>GitLab Cookbook:<br>Chapters: 1, 2</center>
 
 </tr>
 
 <!-- WEEK 3 =============================================================== -->
 <tr>
 <th BGCOLOR="WHITE">3
-<td BGCOLOR="WHITE">Jan 25, 27, 28.
-<td BGCOLOR="WHITE" rowspan="2">
-<p style="color: #ffffff; background-color: #ff0000"><strong>Assignment 1, Lab 1, and Lab 2 [due Friday, Jan 22nd at 9:00PM].</strong></p>
-<strong>Process synchronization. </strong>
+<td BGCOLOR="WHITE">Sept. 13, 15
+<td BGCOLOR="WHITE" rowspan="1">
+<strong>Git advanced concepts </strong>
+</br> <!-- content -->
+- Merge - Conflict Resolution </br>
+- Cherry-Pick</br>
+- Rebase</br>
+- Merge vs. Rebase</br>
+- Common git push situations</br>
+<center>************</center></br>
+<strong>Presentation Session 1 (2 TIME SLOTS) </strong></br>
+[?] What are the best Git alternatives? (Briefly explain how they work and compare them)</br>
+[?] What are the most critical Git security issues? How can developers avoid a Git repository security risk?
+<td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+<center><a href="">Lecture_04</a><center></br>
+<center><a href="">Lecture_05</a><center></br>
+<td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
+<center>GitLab Cookbook:<br>Chapters: 1, 2</center>
 
-<br> <!-- content -->
-- Data race problem: Shared data corruption in concurrent programming.</br>
-- The critical section problem.<br>
-- Synchronization mechanisms: mutex and semaphores.</br>
-- Busy waiting and queue-based implementations for semaphores.<br>
-- Semaphores for process ordering and mutual exclusion. <br>
-- Binary and counting semaphores.<br>
-- Peterson's Algorithm for critical section problem.<br>
-- Classical synchronization problems: Readers/Writers, Dinning philosophers, and Producer/Consumer.</br>
-- Brief introduction on deadlock handling techniques.<br>
-- Resource allocation graphs.<br>
-<td BGCOLOR="WHITE" rowspan="2"> <!-- lecture slides -->
-<center><a href="./OnQ.html">Lecture_07</a><center><br>
-<center><a href="./OnQ.html">Lecture_08</a><center><br>
-<center><a href="./OnQ.html">Lecture_09</a><center><br>
-<center><a href="./OnQ.html">Lecture_10</a><center><br>
-<center><a href="./OnQ.html">Lecture_11</a><center><br>
-<center><a href="./OnQ.html">Lecture_12</a><center>
-<td BGCOLOR="WHITE" rowspan="2"> <!-- textbook section -->
-<center>5 and 7</center>
 </tr>
 
 <!-- WEEK 4 =============================================================== -->
 
-
 <tr>
-<th BGCOLOR="WHITE">4
-<td BGCOLOR="WHITE">Feb 01, 03, 04.
-
-
-</tr>
+    <th BGCOLOR="WHITE">4
+    <td BGCOLOR="WHITE">Sept. 20, 22
+    <td BGCOLOR="WHITE" rowspan="1">
+    <center><p style="color: #ffffff; background-color: #ff0000"><strong>Lab2 [due Oct. 4th at 9:00AM]</strong></p></center>
+    <center><p style="color: #ffffff; background-color: #0000FF"><strong>Quiz 1</strong></p></center>
+    <center>************</center></br>
+    <strong>Code Review </strong>
+    </br> <!-- content -->
+    - Poor quality reviews</br>
+    - Great Reviews</br>
+    - Best practices for code review</br>
+    - Some Examples</br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+    <center><a href="">Lecture_06</a><center></br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
+    <center>Code Review Guid: <br>Chapters: 1, 2, and 3</center><br>
+    <center>Gerrit Code Review: <br>Chapter: 1</center><br>
+    </tr>
 
 
 <!-- WEEK 5 =============================================================== -->
+
 <tr>
-<th BGCOLOR="WHITE">5</th>
-<td BGCOLOR="WHITE">Feb 08, 10, 11.
-<td BGCOLOR="WHITE" rowspan="1">
-<p style="color: #ffffff; background-color: #ff0000"><strong>Assignment 2 [due Friday, Feb 5th at 9:00PM].</strong></p>
-- Deadlock prevention using static rules.<br>
-- Deadlock avoidance using Banker's algorithm.<br>
-- Deadlock detection and recovery.<br>
-<p style="color: #ffffff; background-color: #ff0000"><strong>Assignment 3 [due Friday, Feb 12th at 9:00PM].</strong></p>
-
-<td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-<center><a href="./OnQ.html"></a><center><br>
-<center><a href="./OnQ.html">Lecture_13</a><center><br>
-<center><a href="./OnQ.html">Lecture_14</a><center><br>
-<center><a href="./OnQ.html">Lecture_15</a><center><br>
-
-<td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
-<center>7, 8 and 9.</center>
-</tr>
-
+    <th BGCOLOR="WHITE">5
+    <td BGCOLOR="WHITE">Sept. 20, 22
+    <td BGCOLOR="WHITE" rowspan="1">    
+    <strong>Gerrit Code Review </strong></br>
+    - What is Gerrit?</br>
+    - Build stability</br>
+    - Gerrit Concepts</br>
+    - Push for Code Review (3 cases)</br>
+    - Review and vote</br>
+    <center>************</center></br>
+    <strong>Gerrit more advanced topics </strong></br>
+    - Standard workflow </br>
+    - Working with Change Series </br>
+    - Conflict Resolution in Gerrit </br>
+    - Working with Topics </br>
+    - Working with Stable Branches</br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+    <center><a href="">Lecture_07</a><center></br>
+    <center><a href="">Lecture_08</a><center></br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
+    <center>Code Review Guid: <br>Chapters: 1, 2, and 3</center><br>
+    <center>Gerrit Code Review: <br>Chapter: 1</center><br>
+    </tr>
 <!-- WEEK 6 =============================================================== -->
+
+<tr>
+    <th BGCOLOR="WHITE">6
+    <td BGCOLOR="WHITE">Oct. 04, 06
+    <td BGCOLOR="WHITE" rowspan="1">    
+    <center><p style="color: #ffffff; background-color: #ff0000"><strong>Lab3 [due Oct. 25th at 9:00AM]</strong></p></center>
+
+    <strong>Build Systems </strong></br>
+    - Introduction</br>
+    - Why do we need a build system?</br>
+    - What is a build system</br>
+    - Compiled vs Interpreted Languages</br>
+    - Source and Object trees</br>
+    - A Make-Based Build System </br>
+    - Creating a Simple Makefile for the calculator </br>
+    <center>************</center></br>
+    <strong>Build Systems </strong></br>
+    - Source Code in Multiple Directories</br>
+    - Recursive Make over Multiple Directories </br>
+    - The dependency graph</br>
+    - Incremental Compilation</br>
+    - Subtarget Builds</br>
+    - The Problem with Bad Dependencies (Missing, Unwanted, and Circular Dependencies)</br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+    <center><a href="">Lecture_09</a><center></br>
+    <center><a href="">Lecture_10</a><center></br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
+    <center>Software Build Systems: <br>Chapters: 1, 2, and 3</center><br>
+    </tr>
 
 <!-- READING WEEK =============================================================== -->
 <tr>
 <tr>
 <th BGCOLOR="ORANGE"> ---&nbsp;
-<td BGCOLOR="ORANGE">Feb 15, 17, 18.
-<td BGCOLOR="ORANGE"><strong><center>Family Day + Reading Week, No Class</center></strong>
+<td BGCOLOR="ORANGE">Oct. 11, 13
+<td BGCOLOR="ORANGE"><strong><center>Fall Reading Break, No Class</center></strong>
 
 <td BGCOLOR="ORANGE">
 &nbsp;
 <td BGCOLOR="ORANGE">
 &nbsp;
 </tr>
-
+<!-- Week 7 =============================================================== -->
 
 <tr>
-<tr>
-<th BGCOLOR="WHITE"> 6&nbsp;
-<td BGCOLOR="WHITE">Feb 22, 24, 25.
-<td BGCOLOR="WHITE">
-
-<p style="font-size:150%;color: #ffffff; background-color: #000000;text-align:center"><strong> Term Exam 1 (Feb 22nd) [90 minutes within a 12-hour timespan]</strong></p>
-
-<strong>Memory management. </strong>
-<br> <!-- content -->
-- Memory pyramid, memory types, and backup memories.</br>
-- Review program processing cycle (Compile, Linking, Loading and executing).<br>
-- Dynamic linking and dynamic loading.<br>
-- Logical and physical addresses.<br>
-- Address binding: Compile time, load time, and runtime address binding.
-
-<p style="color: #ffffff; background-color: #ff0000"><strong>Lab 3 [due Friday, Feb 26th at 9:00PM].</strong></p>
-<td BGCOLOR="WHITE">
-<center><a href="./OnQ.html">Lecture_16</a><center><br>
-<center><a href="./OnQ.html">Lecture_17</a><center><br>
-<center><a href="./OnQ.html">Lecture_18</a><center><br>
-<td BGCOLOR="WHITE">
-&nbsp;
-</tr>
-<!-- WEEK 7 =============================================================== -->
-<tr>
-<th BGCOLOR="WHITE">7
-<td BGCOLOR="WHITE">Mar 01, 03, 04
-<td BGCOLOR="WHITE" rowspan="3">
-
-- Memory allocation strategies (contiguous and noncontiguous).<br>
-- Single-level paging memory management scheme.<br>
-- Virtual address translation in paging.<br>
-- Translation Look-aside Buffer: TLB-hit and TLB-miss.<br>
-- Multilevel paging memory management system.<br>
-<p style="color: #ffffff; background-color: #ff0000"><strong>Lab 4 [due Friday, Mar 5th at 9:00PM].</strong></p>
-- Segmentation memory management scheme.<br>
-- Segmentation with paging.<br>
-- Page fault and segmentation fault<br>
-<p style="color: #ffffff; background-color: #ff0000"><strong>Assignment 4 [due Friday, Mar 12th at 9:00PM].</strong></p>
-- Virtual memory.<br>
-- Page fault handling.<br>
-- Page replacement algorithms<br>
-- Thrashing and prevention techniques (working set and PFF)<br><br>
-<strong>Process synchronization (Con't)</strong><br>
-- Monitors for process synchronization<br>
-- CPU scheduling algorithms: FCFS, RR, PRIORITY, SJF, SRTF, MLQ, and MLFQ.<br>
-<p style="color: #ffffff; background-color: #ff0000"><strong>Assignment 5 [due Friday, Mar 19th at 9:00PM].</strong></p>
-
-
-
-<td BGCOLOR="WHITE" rowspan="3"> <!-- lecture slides -->
-<center><a href="./OnQ.html">Lecture_19</a><center><br>
-<center><a href="./OnQ.html">Lecture_20</a><center><br>
-<center><a href="./OnQ.html">Lecture_21</a><center><br>
-<center><a href="./OnQ.html">Lecture_22</a><center><br>
-<center><a href="./OnQ.html">Lecture_23</a><center><br>
-<center><a href="./OnQ.html">Lecture_24</a><center><br>
-<center><a href="./OnQ.html">Lecture_25</a><center><br>
-<center><a href="./OnQ.html">Lecture_26</a><center><br>
-<center><a href="./OnQ.html">Lecture_27</a><center><br>
-
-<td BGCOLOR="WHITE" rowspan="3"> <!-- textbook section -->
-<center>8 and 9</center>
+    <th BGCOLOR="WHITE">7
+    <td BGCOLOR="WHITE">Oct. 14
+    <td BGCOLOR="WHITE" rowspan="1">    
+    <center><p style="color: #ffffff; background-color: #0000ff"><strong>Quiz 2</strong></p></center>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
 </tr>
 
 <!-- WEEK 8 =============================================================== -->
 
 <tr>
-<th BGCOLOR="WHITE">8
-<td BGCOLOR="WHITE">Mar 8, 10, 11
-</tr>
+    <th BGCOLOR="WHITE">8
+    <td BGCOLOR="WHITE">Oct. 18, 20
+    <td BGCOLOR="WHITE" rowspan="1">    
+    <strong>Static Code Analysis </strong></br>
+    - What is it? Why do we need that? and how does it work?</br>
+    - Manual Review</br>
+    - Automated tools for performing static code analysis</br>
+    <center>************</center></br>
+    <strong>Static Code Analysis </strong></br>
+    - Examples (Buffer Overruns, Uninitialized variables, Memory Leaks, etc.) </br>
+    - Features of advanced static analysis tools</br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+    <center><a href="">Lecture_11</a><center></br>
+    <center><a href="">Lecture_12</a><center></br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
+    <center>Static Program Analysis: <br>Chapter: 1</center><br>
+    <center>Advanced Static Analysis for C++</center><br>
+    </tr>
 
 <!-- WEEK 9 =============================================================== -->
 
 <tr>
-<th BGCOLOR="WHITE">9
-<td BGCOLOR="WHITE">Mar 15, 17, 18
-</tr>
+    <th BGCOLOR="WHITE">9
+    <td BGCOLOR="WHITE">Oct. 25, 27
+    <td BGCOLOR="WHITE" rowspan="1">    
+    <center><p style="color: #ffffff; background-color: #ff0000"><strong>Course Project [due TBA at 9:00AM]</strong></p></center>
+    <strong>Software Testing </strong></br>
+    - What could happen when software goes bad?</br>
+    - Goals of Testing Software?</br>
+    - Model-Driven Test Design (MDTD)</br>
+    - Test Desing, Automation, Execution, Evaluation</br>
+    - High overview of a testing process</br>
+    <center>************</center></br>
+    <strong>Software Testing </strong></br>
+    - Software testability</br>
+    - Test case</br>
+    - Executable test script</br>
+    - A test automation framework </br>
+    - JUNIT</br>
+    - CPPUNIT</br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+    <center><a href="">Lecture_13</a><center></br>
+    <center><a href="">Lecture_14</a><center></br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
+    <center>Introduction to Software Testing: <br>Parts: 1, 2, 3, and 4</center><br>
+    </tr>
 
+<!-- WEEK 10 =============================================================== -->
+
+<tr>
+    <th BGCOLOR="WHITE">10
+    <td BGCOLOR="WHITE">Oct. 25, 27
+    <td BGCOLOR="WHITE" rowspan="1">    
+    <strong>Software Testing </strong></br>
+    - Whay we shold put testing first?</br>
+    - Cost-of-Change curve</br>
+    - <i>agile</i> software development methods</br>
+    - System Tests in Agile Methods</br>
+    - Coverage criteria</br>
+    - Advantages of using coverage criteria</br>
+    <center>************</center></br>
+    <strong>Presentation Session 2 (2 TIME SLOTS) </strong></br>
+    [?] TBA</br>
+    [?] TBA</br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+    <center><a href="">Lecture_15</a><center></br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
+    <center>Software Build Systems: <br>Chapters: 1, 2, and 3</center><br>
+    </tr>
 <!-- WEEK 11 =============================================================== -->
 
 <tr>
-<th BGCOLOR="WHITE">10
-<td BGCOLOR="WHITE">Mar 22, 24, 25.
-<td BGCOLOR="WHITE">
-<strong>Interprocess Communication</strong><br>
-- Message passing for process communication and synchronization, Sockets, and RPCs.<br><br>
-<strong>Hard Disk Drive scheduling </strong><br>
-- Disk space allocation.<br>
-- HDD scheduling algorithms.<br><br>
-
-<strong>Security in Operating systems</strong><br>
-- Security threats and aspects.<br>
-- Security services in OS: authentication, confidentiality, integrity, availability, and non-repudiation.</br>
-- OS security threats<br>
-- OS security tools: Anti-virus, anti-spyware, IDS, IPS, firewall, and honypots.<br>
-- Some OS attacks: Buffer overflow on the stack, overflow on the heap, and integer overflow.<br>
-
-<p style="color: #ffffff; background-color: #ff0000"><strong>Lab 5 and Assignment 6 [due Friday, Mar 26th at 9:00PM].</strong></p>
-<td BGCOLOR="WHITE"> <!-- lecture slides -->
-<center><a href="./OnQ.html">Lecture_28</a></center><br>
-<center><a href="./OnQ.html">Lecture_29</a></center><br>
-<center><a href="./OnQ.html">Lecture_30</a></center>
-
-<td BGCOLOR="WHITE"> <!-- textbook sections -->
-<center>3, 6, 14, and 15<center>
-</tr>
+    <th BGCOLOR="WHITE">11
+    <td BGCOLOR="WHITE">Nov. 08, 10
+    <td BGCOLOR="WHITE" rowspan="1">    
+    <center><p style="color: #ffffff; background-color: #0000ff"><strong>Quiz 3</strong></p></center>
+    <center>************</center></br>
+    <strong>Continuous Integration / Continuous Delivery </strong></br>
+    - Reduce Risks</br>
+    - Reduce Repetitive Processes</br>
+    - Establish Greater Product Confidence</br>
+    - What Prevents Teams from Using CI?</br>
+    - When and How Should a Project Implement CI?</br>
+    - How long does CI take to be set up?</br>
+    - How to establishe <i>good</i> day-to-day software development habits?</br>
+    - Commit Code Frequently</br>
+    - Do not Commit Broken Code</br>
+    - Fix Broken Builds Immediately</br>
+    - Write Automated Developer Tests</br>
+    - Make Sure All Tests and Inspections Passed</br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+    <center><a href="">Lecture_13</a><center></br>
+    <center><a href="">Lecture_14</a><center></br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
+    <center>Continuous Delivery: <br>Chapters: 1, 2, and 3</center><br>
+    </tr>
 <!-- WEEK 12 =============================================================== -->
 
 <tr>
-<th BGCOLOR="WHITE">11
-<td BGCOLOR="WHITE">Mar 29, 31, Apr 1.
-<td BGCOLOR="WHITE">
-<p style="font-size:150%;color: #ffffff; background-color: #000000;text-align:center"><strong> Term Exam 2 (Apr 1st) [90 minutes within a 12-hour timespan]</strong></p>
-<p style="color: #ffffff; background-color: #ff0000"><strong>Lab 6 [due Friday, Apr 9th at 9:00PM].</strong></p>
-<td BGCOLOR="WHITE"> <!-- lecture slides -->
-<center><a href="./OnQ.html"></a><center><br>
-<!--<center><a href="./OnQ.html">Lecture_35</a><center><br>
-<center><a href="./OnQ.html">Lecture_36</a><center><br>-->
-
-<td BGCOLOR="WHITE"> <!-- textbook sections -->
-</tr>
+    <th BGCOLOR="WHITE">12
+    <td BGCOLOR="WHITE">Nov. 15, 17
+    <td BGCOLOR="WHITE" rowspan="1">    
+    <strong>Continuous Integration / Continuous Delivery </strong></br>
+    - An example of CI</br>
+    - Agile runs on CI</br>
+    - How to use a CI tool </br>
+    - Creating a self-triggered build</br>
+    - Automate the packaging</br>
+    - Automating the deployments</br>
+    - Automating the testing</br>
+    - Automating the code analysis</br>
+    - Automating the deployments</br>
+    <center>************</center></br>
+    <strong>Continuous Integration / Continuous Delivery </strong></br>
+    - What is Jenkins Pipeline?</br>
+    - One continuous delivery scenario</br>
+    - Declarative vs. scripted pipelines</br>
+    - Scripted pipeline drawbacks</br>
+    - Declarative Pipeline fundamentals</br>
+    - Pipeline example</br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
+    <center><a href="">Lecture_15</a><center></br>
+    <center><a href="">Lecture_16</a><center></br>
+    <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
+    <center>Learning Continuous Integration with Jenkins<br>Chapters: 4, 5, and 6</center><br>
+    </tr>
 </table>
-
-<h3>Assignments</h3>
-
-<p>Assignment general directions:<br>
-<ul>
-When an assignment is released on this website the course instructure will let you know through email. You will get a posting-notification on OnQ anyways.<br><br>
-
-Assignments must be submitted in PDF format. No other format is accepted. Late work will certainly be subject to a penalty. See <a href="#LSP">late submission policy</a>.<br><br>
-
-Assignments are to be performed individually. Solutions will be available on onQ after the assignment due date.<br><br>
-
-</ul>
-
-<p>Assignment documents:<br>
-
-<ul><ul>
-<li>
-<strong>Assignment 1</strong> <a href="./OnQ.html"> (Assignment_1.pdf)</a> [due Jan 22nd] <br>
-This assignment covers computer architectures, instruction execution cyles, processes management and interrupts. There are theoritical questions as well as practical questions.
-</li>
-<br>
-
-<li>
-<strong>Assignment 2</strong> <a href="./OnQ.html"> (Assignment_2.pdf)</a> [due Feb 5th] <br>
-This assignment covers process synchronization, mainly, process precedence graphs, CoBegin and CoEnd program constructs, and semaphore usage for code synchronization.
-</li>
-<br>
-<li>
-<strong>Assignment 3</strong> <a href="./OnQ.html"> (Assignment_3.pdf)</a> [due Feb 12th] <br>
-This assignment covers process synchronization, mainly, a classical synchronization problem, critical section problem requirements, process precedence graphs, CoBegin and CoEnd program
-constructs, and some deadlock avoidance using RAGs (Resource Allocation Graphs).
-</li>
-<br>
-<li>
-<strong>Assignment 4</strong> <a href="./OnQ.html"> (Assignment_4.pdf)</a> [due Mar 12th] <br>
-This assignment covers memory management, in particular, virtual and physical address, fragmentation, paging, segmentation, and segmentation with paging.
-</li>
-<br>
-<li>
-<strong>Assignment 5</strong> <a href="./OnQ.html"> (Assignment_5.pdf)</a> [due Mar 19th] <br>
-This assignment covers memory management, in particular, virtual memory, segment fault, page fault, effective memory access time with page faults and TLB, and page replacement algorithms.
-</li>
-<br>
-
-<li>
-<strong>Assignment 6</strong> <a href="./OnQ.html"> (Assignment_6.pdf)</a> [due Mar 26th] <br>
-This assignment covers monitors, CPU scheduling, and OS Security.
-</li>
-</ul>
-</ul>
-
-
-
 
 
 <h3>Labs</h3>
-<p>Labs general directions:<br>
+<p>Labs general directions:TBA</br>
+<!-- <ul>
+    When a Lab is released on this website the course instructure will let you know through email. You will get a posting-notification on OnQ anyways.</br></br>
+    You should submit (upload) your lab (Zipped file) onto OnQ before or by the due date. Depending on which group you belong to in the class, your lab (source codes and readme.txt file) will be reviewed and
+    marked by an assigned TA. Late work might not be accepted. See <a href="#LSP">late submission policy</a>.</br></br>
+    Labs are to be performed individually. Solutions are not released. Discussing your lab solution is welcome though.</br></br>
+    CISC324 does not have formally scheduled lab sections, so you may complete lab work anytime but not beyond the due dates. <strong>If you run into difficulty with a lab, contact a TA by email.</strong>
+</ul>
+-->
+
+<p>Lab Instructions and Files:
 <ul>
-When a Lab is released on this website the course instructure will let you know through email. You will get a posting-notification on OnQ anyways.<br><br>
-
-You should submit (upload) your lab (Zipped file) onto OnQ before or by the due date. Depending on which group you belong to in the class, your lab (source codes and readme.txt file) will be reviewed and
-marked by an assigned TA. Late work might not be accepted. See <a href="#LSP">late submission policy</a>.<br><br>
-
-Labs are to be performed individually. Solutions are not released. Discussing your lab solution is welcome though.<br><br>
-
-CISC324 does not have formally scheduled lab sections, so you may complete lab work anytime but not beyond the due dates. <strong>If you run into difficulty with a lab, contact a TA by email.</strong>
+    <li>
+        <strong>Lab 1</strong> (<a href="#">Lab_1.pdf</a>) [due Sep 20th]</br>In this lab, there are 12 (small) exercises. If you have never worked with any version controll systems like <b>Git</b> the main challenge for you will be to understant the concepts, create an account and worked with the cloned repository. Your main task in this lab is to understand what kinds of benefit you will get by using a version control system ranther and keep naming your file like: <b>final.cpp</b>, <b>final2.cpp</b>, <b>reallyFinal.cpp</b>, <b>finalyReallyFinal.cpp</b>, <b>OMGfinal.cpp</b>, etc. It is never ending! You never know which one is the actual final cpp file!
+    </li>
+</ul>
+</br>
+<ul>
+    <li>
+        <strong>Lab 2</strong> (<a href="#">Lab_2.pdf</a>) [due Oct 04th]</br> In this lab, there is only three exercises. During this lab, you will be using <b>Gerrit</b>, <b>GitHub</b> and <b>GerritHub</b> to add a reviewer, make a change and ask the reviewre manually/automatically to check your changes. Then you will get a notification and try to address the feedback from the reviewer.</br> In one part of this lab you should add TA and professor as the reviwer of your code! make sure you do that beacuse if we don't get the message, you don't get the full mark!
+    </li>
+</ul>
+</br>
+<ul>
+    <li>
+        <strong>Lab 3</strong> (<a href="#">Lab_3.pdf</a>, <a href="#">Lab_3.zip</a>) [due Oct 29th]</br> 
+        This lab is challenging because it is your first time writing Makefile. In the first part of this lab, we will be working on a simple compilation process with just one source file. We will learn three main elements of a Makefile and how we can use them towards out goal which is (usually) generating an executable file.
+        In the second part of this lab, we will consider a bit more complex scenario, where the source code is broken down into multiple files. It is more challenging because now we should we first have to compile those files to object code, an intermediate compilation stage. Next we should compile multiple object files to assemble an executable
+    </li>
 </ul>
 
-</ul><p>Lab Instructions and Files: <ul>
+<div class="subtitle-divider-2"></div>
 
+<h3><a id="Quizzes"></a>Quizzes</h3>
 <ul>
-<li><strong>Lab 1</strong> (<a href="./OnQ.html">Lab_1.pdf</a>) [due Jan 22nd]<br>
-In this lab, there are two exercises. In the first exercise you will be using the C-program in <b>eXer_1.c</b>. In the second exercise, you will be using two C-programs <b>eXer_2.c</b> and
-<b>count.c</b>.
+    <li>
+        <strong>Quiz 1</strong> [on September 20th]</br>This quiz covers lectures from week 1 to week 3, i.e., DevOps Practices and Git.
+    </li>
+    <li>
+        <strong>Quiz 2</strong> [on October 11th]</br> This quiz covers lectures from week 4 to week 6, i.e., Code Review, Gerrit and build systems.
+    </li>
+    <li>
+        <strong>Quiz 3</strong> [on November 8th]</br> This quiz covers lectures from week 7 to week 10, i.e., Static Analysis and Testing.
+    </li>
 </ul>
-<br>
+</br>
+
+<div class="subtitle-divider-2"></div>
+
+
+
+<h3>Final Project</h3>
+<p>Points that you need to consider for preparing your final project: TBA</br></p>
+
+<div class="subtitle-divider-2"></div>
+
+<h3><a id="LSP"></a>Late Submission Policy</h3>
 <ul>
-<li><strong>Lab 2</strong> (<a href="./OnQ.html">Lab_2.pdf</a>) [due Jan 22nd]<br>
-In this lab, there is only one exercise. During this lab, you will be using the Java class file <b>ThreadAttacker.java</b> and the Java class file
-<b>ThreadBot.java</b>.
+    <li>
+        If you submit your work 15 minutes after the deadline, then you lose 5% of the total grade.</br>
+    </li>
+    <li>
+        If you submit your work 24 hours after the deadline, then you lose 10% of the total grade.</br>
+    </li>
+    <li>
+        If you submit your work 48 hours after the deadline, then you lose 20% of the total grade.</br>
+    </li>
+    <li>
+        If you submit your work 72 hours after the deadline, then your submission will not be considered.</br>
+    </li>
 </ul>
-<br>
-<ul>
-<li><strong>Lab 3</strong> (<a href="./OnQ.html">Lab_3.pdf</a>) [due Feb 26th]<br>
-This lab is challenging because it is your first time writing synchronization code. As a first step, study and execute the given code where readers have priority (course reader page 29). Make sure
-that you can tell from looking at the output that readers are indeed getting priority. Then plan how to create code that gives priority to writers. The Java codes for readers having priority are:
-<b>MainMethod.java</b> which is the main class, <b>Reader.java</b> which defines the readers class, <b>Writer.java</b> which defines the writers class, <b>RandomSleep.java</b> which defines a
-class for random sleeping methods (you will need that to simulate a reader that is reading, a writer that is writing, and a reader/writer that finished then came back to read/write again), and
-<b>Synch.java</b> which defines the class of semaphores that you will be using.
-</ul>
-<br>
-
-<ul>
-<li><strong>Lab 4</strong> (<a href="./OnQ.html">Lab_4.pdf</a>) [due Mar 5th]<br>
-This lab consists of implementing a synchronization code using Java semaphores to simulate the cars traffic around two regions. A car is initially driving around
-Barriefield (East of Kingston) then crosses a causeway westbound to Kingston to enter a petrol station and fill up the fuel tank. Once done, the car drives back
-to Barriefield crossing the causeway eastbound. Because of roadworks, there is onlt one lane that can be used to cross westbound or eastbound. You are given the
-<b>MainMethod.java</b> file that contains the main method, the <b>Car.java</b> file that contains the car code, the Synch.java file that will contain the
-semaphores and shared counters, the <b>Semaphore.java</b> that contains the semaphore class, and finally the <b>TimeSim.java</b> file that contains an accurate
-time simulation written by Professor Blostein. The simulated time advances after all threads have reached a sleep() or acquire(). The implementation of
-timeSim needs an exact count of the number of threads. Therefore, every thread you create has to begin by calling Synch.timeSim.threadStart() and has to
-end by calling Synch.timeSim.threadEnd(). The car thread code in <b>Car.java</b> shows how to do this. Note that because Java's built-in sleep() method results
-in inexact timing. For example, if two threads execute a sleep instruction at the same time, the thread that executes sleep(20) may wake up before the thread that executes sleep(10), you are provided
-with the
-TimeSim.java file to have a better precision in your simulation.
-</ul>
-<br>
-
-
-<ul>
-<li><strong>Lab 5</strong> (<a href="./OnQ.html">Lab_5.pdf</a>) [due Mar 26th]<br>
-This lab consists of implementing a synchronization code using Java Monitors. It consists of two exercises: (1) The first exercise consists of writing synchronization code using Java Monitors for
-the readers-writers problem (starvation free solution). You are given the solution with readers having priority in the following Java files: <b>MainMethod.java</b>, <b>Reader.java</b>,
-<b>Writer.java</b>, <b>SharedDataStruct.java</b>, and <b>rwMonitor.java</b>. You have to modify the code so that the behaviour reflects a
-starvation free solution (2) The second exercise consists of correcting a synchronization code using Java Monitors for the Bounded Buffer problem. You are provided with the following Java
-files:
-<b>MainThread.java</b>, <b>Producer.java</b>, <b>Consumer.java</b>, and <b>Buffer.java</b>.<br>
-</ul>
-<br>
-
-
-<ul>
-<li><strong>Lab 6</strong> (<a href="./OnQ.html">Lab_6.pdf</a>) [due Apr 9th]<br>
-This lab consists of implementing a distributed application using Java sockets and Java RMI(Remote Method Invocation) message passing technologies to compare
-multiple page replacement algorithms. You are provided with the following two java applications: (1)<b>T1.java</b>, <b>T2.java</b>, and (2) <b>Client.java</b>,
-<b>Server.java</b>, <b>Server_Interface.java</b>. You can use those files as your building blocks for the lab. At the end of this lab, you will learn how to
-write code that involves multiples processes/threads that communicate and cooperate over the network using message passing to share data and set up
-synchronization.<br>
-</ul>
-<br>
-
-
-<h3><a id="LSP"></a>Late Submission Policy (for Assignment 2 to 6, and Lab 3 to 6)</h3>
-- If you submit your work 15 minutes after the deadline, then you lose 5% of the total grade.<br>
-
-- If you submit your work 24 hours after the deadline, then you lose 10% of the total grade.<br>
-
-- If you submit your work 48 hours after the deadline, then you lose 20% of the total grade.<br>
-
-- If you submit your work 72 hours after the deadline, then your submission will not be considered.<br>
-<br>
+</br>
+<div class="subtitle-divider-2"></div>
 
 
 <h3>Grade distribution</h3>
 <footer id="bottom"></footer>
 
-Assignments are worth 22% of the course grade. The grade breakdown is as follows:<br><br>
+Lab are worth 15% of the course grade. The grade breakdown is as follows:</br></br>
 
 <ul>
-<li>Assignment 1 weights <strong>3.5%</strong>.<br>
-<li>Assignment 2 weights <strong>4.0%</strong>.<br>
-<li>Assignment 3 weights <strong>2.5%</strong>.<br>
-<li>Assignment 4 weights <strong>5.0%</strong>.<br>
-<li>Assignment 5 weights <strong>4.0%</strong>.<br>
-<li>Assignment 6 weights <strong>3.0%</strong>.<br><br>
+    <li>Lab 1 weights <strong>5.0%</strong></li>
+    <li>Lab 2 weights <strong>5.0%</strong></li>
+    <li>Lab 3 weights <strong>5.0%</strong></li>
+    <li>Quiz 1 weights <strong>10.0%</strong></li>
+    <li>Quiz 2 weights <strong>10.0%</strong></li>
+    <li>Quiz 3 weights <strong>10.0%</strong></li>
+    <li>Final Project weights <strong>15.0%</strong></li>
+    <li>Final Exam weights <strong>40.0%</strong></li>
+    <li><b>Bonus point</b> <strong>10.0%</strong></li>
+</br>
 </ul>
 
-Lab are worth 28% of the course grade. The grade breakdown is as follows:<br><br>
-
-<ul>
-<li>Lab 1 weights <strong>3.0%</strong>.<br>
-<li>Lab 2 weights <strong>2.0%</strong>.<br>
-<li>Lab 3 weights <strong>5.0%</strong>.<br>
-<li>Lab 4 weights <strong>6.0%</strong>.<br>
-<li>Lab 5 weights <strong>6.0%</strong>.<br>
-<li>Lab 6 weights <strong>6.0%</strong>.<br><br>
+<p>You can earn the Bonus point in two ways:</p> 
+<ul> 
+    <li>If you give a presentation (up to 5.0%)</li>
+    <li>If in your final project you add extra steps for continues deployment (up to 5.0%)</li>
 </ul>
-
-Term exams weight 25% each.<br><br>
-
 </body>
 
-
-
 </html>
-`)
 
 
 
