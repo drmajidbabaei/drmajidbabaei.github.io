@@ -933,7 +933,9 @@ a.totop-link {
    #Last Screen
    ========================================================================== */
 .introduction-end {
-    background: url(../images/home/introEnd.png)no-repeat right top;
+    /* background: url(../images/home/introEnd.png)no-repeat right top; */
+    background: url(../images/home/mypic15.png);
+    /* background-color: #000; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -941,7 +943,7 @@ a.totop-link {
     cursor: pointer;
 }
 .introduction-end-con {
-    float: right;
+    float: left;
     margin: 30% 0 0;
 }
 .introduction-end-con h3 {
