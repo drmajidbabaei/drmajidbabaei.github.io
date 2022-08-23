@@ -27,7 +27,7 @@
                 if(validateForm()){
                  e.preventDefault();
                   $.ajax({type: "POST",
-                          url: "http://www.yourdomain.com/send-email.php",
+                          url: "https://formsubmit.co/ecse437.mcgill@gmail.com",
                           data:$("#form1").serialize(),
                           success:function(result){
                           $("#successmsg").html(result);
