@@ -3,7 +3,7 @@
  $name=$_POST["name"];
  $from=$_POST["email"];
  $msg=$_POST["message"];
- $receiver="https://formsubmit.co/ecse437.mcgill@gmail.com";
+ $receiver="https://formsubmit.co/b408e6dca778d484b9de287d7337493e";
  $subject="Contact us form details";
 
 $message = "
