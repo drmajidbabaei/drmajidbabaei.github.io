@@ -374,6 +374,17 @@ h5 {
 .margin-right30 {
     margin-right: 30px;
 }
+.margin-left30 {
+    margin-left: 30px;
+}
+a {
+    color: #ffb400;
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 10;
+    }
 /* ==========================================================================
    #Left Side 
    ========================================================================== */
@@ -1007,7 +1018,7 @@ a.totop-link {
     color: #757575;
 }
 .blog-left {
-    width: 80%;
+    width: 70%;
     float: left;
     margin:0 0% 0 0;
 }
@@ -1072,7 +1083,7 @@ iframe, embed, object {
 .blog-right {
     float: right;
     margin: 0;
-    width: 16%;
+    width: 30%;
 }
 .blog-right h3 {
     margin: 0 0 20px 0;
