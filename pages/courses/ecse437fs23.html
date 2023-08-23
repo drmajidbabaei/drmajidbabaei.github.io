@@ -19,6 +19,41 @@ padding-top: 30px;
 padding-bottom: 30px;
 }
 </style>
+<style>    
+    .callout {
+      position: fixed;
+      bottom: 350px;
+      right: 20px;
+      margin-left: 20px;
+      max-width: 300px;
+    }
+    
+    .callout-header {
+      padding: 25px 15px;
+      background: #555;
+      font-size: 22px;
+      color: white;
+    }
+    
+    .callout-container {
+      padding: 15px;
+      background-color: #ccc;
+      color: black
+    }
+    
+    .closebtn {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    
+    .closebtn:hover {
+      color: lightgrey;
+    }
+    </style>
 </head>
 
 
@@ -76,6 +111,34 @@ animation: blink .75s linear infinite;
     background-color: #ffffff;
     margin: 30px 0 50px 0
 }
+
+blockquote {
+font-style:italic;
+line-height:32px;
+font-size:20px;
+color:#fff;
+background: #3F51B5;
+margin:10px;
+padding: 15px 20px 15px 20px;
+border-radius: 5px;
+}
+blockquote:before,
+blockquote:after {
+position: relative;
+vertical-align: middle;
+font-family: 'Playfair Display', serif;
+font-size: 56px;
+font-weight: 700;
+line-height: 0;
+color: #FBC02D;
+}
+blockquote:before {
+left: -5px;
+content: '\201C';
+}
+blockquote:after {
+content: '\201D';
+}
 </style>
 
 
@@ -83,7 +146,7 @@ animation: blink .75s linear infinite;
 padding: 10px;
 color:#000f00;
 font-family: 'IBM Plex Mono', monospace;
-background-color: #e0e0d8;"
+background-color: rgb(243, 245, 191);"
 >
 <center><img src="../../images/home/mcgilllog.png" atl="mcgill logo" width="370" height="130"></center>
 <center><h1>ECSE 437: Software Delivery</h1></center>
@@ -93,10 +156,29 @@ background-color: #e0e0d8;"
 
 
 
-<h3>Course Syllabus</h3>
-<p style="text-align:justify;">
-    Design, development, and implementation of code integration processes, release pipelines, and deployment strategies. </p>
+<h3>Learning Outcomes</h3>
+<p style="text-align:justify;">Software development used to be a highly fragmented process. After developers have completed a set of enhancements and defect fixes, a candidate version of a release would be handed off to Software Quality Assurance (SQA) teams, who would check the candidate for defects. Next, the SQA team would hand the RC off to release engineering teams, who would prepare the software for release. After completing the official release process, software operators would install and configure the RC in production environments, where users can finally interact with it.</p>
+<p style="text-align:justify;">This fragmented approach to software engineering has largely been abandoned in industry for two reasons. First, since large quantities of enhancements and defect fixes would be grouped together into one release candidate, releases would encompass a large amount of change in the software system. These large releases were deemed risky both from a development organization perspective (i.e., field-reported defects can invalidate weeks or months of development effort) and a user adoption perspective (i.e., with so much change in the software system, it may be difficult to migrate existing installations to the new release). Second, the stakeholders on different teams would solely focus on tasks that fall within their purview, often leading to a lack of oversight of the whole development, release, and operations processes. Instead, modern development teams have embraced the DevOps mindset, i.e., a holistic view of the development, release, and operations processes. Enabling this mindset is a vast array of development, release, and operations tools, techniques, and practices.</p>
+<p style="text-align:justify;">Modern software delivery teams are tasked with selecting appropriate software delivery tools and assembling them to produce integration, release, and deployment pipelines that connect development, release, and operations processes. The material in this course will mainly be delivered through hands-on experience in developing integration, release, and deployment pipelines.</p>
+<p style="text-align:justify;">More specifically, students will:
+    <ul>
+        <li>Be introduced to the challenges of modern software delivery</li>
+        <li>Gain experience with several key tools (build and test automation, version control management)</li>
+        <li>Design and develop integration, release, and deployment pipelines for a large application</li>
+    </ul>
+</p>
 
+<blockquote>
+    The main objective of this course is to provide students with the skills that are needed to design, develop, and maintain the integration, release, and deployment pipelines that are at the centre of modern DevOps-based software releasing practices.
+</blockquote>
+
+<div class="callout">
+    <div class="callout-header">Important Message!</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+    <div class="callout-container">
+      <p> Get access to the official content in myCources at <a href="https://mycourses2.mcgill.ca/d2l/home/659807">ECSE-437-001</a> or close it if it is in your way.</p>
+    </div>
+  </div>
 <div class="subtitle-divider-2"></div>
 
 <h3>Instructor</h3>
@@ -159,34 +241,28 @@ clarified.
 I will be using a series of textbooks to teach this course:
 <ol>
     <li>
-        <a href="https://www.amazon.ca/Learning-DevOps-accelerate-collaboration-Kubernetes/dp/1838642730">Learning DevOps: The complete guide to accelerate collaboration with Jenkins, Kubernetes, Terraform and Azure DevOps</a>
+        <a href="https://mcgill.on.worldcat.org/oclc/1102581230">Achieving DevOps : a novel about delivering the best of Agile, DevOps, and microservices</a>
     </li>
     <li>
-        <a href="https://www.amazon.ca/GitLab-Cookbook-Jeroen-van-Baarsen/dp/1783986840">GitLab Cookbook</a>
+        <a href="https://mcgill.on.worldcat.org/oclc/1308983414">Learning DevOps</a>
     </li>
     <li>
         <a href="https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf"> CODE REVIEW GUIDE - OWASP Foundation </a>
     </li>
     <li>
-        <a href="https://www.amazon.ca/Learning-Gerrit-Code-Review-Milanesio/dp/1783289473">Learning Gerrit Code Review</a>
+        <a href="https://mcgill.on.worldcat.org/oclc/1195455840">Implementing effective code reviews : how to build and maintain clean code</a>
     </li>
     <li>
-        <a href="https://www.amazon.ca/Software-Build-Systems-Principles-Experience/dp/013418596X">Software Build Systems: Principles and Experience</a>
+        <a href="https://mcgill.on.worldcat.org/oclc/718419490">Software build systems : principles and experience</a>
     </li>
     <li>
         <a href="https://cs.au.dk/~amoeller/spa/spa.pdf">Static Program Analysis</a>
     </li>
     <li>
-        <a href="https://valbrio.com/wp-content/uploads/AdvancedStaticAnalysisforCC_May2017.pdf">ADVANCED STATIC ANALYSIS FOR C/C++</a>
-    </li>
-    <li>
-        <a href="https://www.amazon.ca/Introduction-Software-Testing-Paul-Ammann/dp/0521880386">Introduction to Software Testing</a>
+        <a href="https://mcgill.on.worldcat.org/oclc/180851905">Introduction to software testing</a>
     </li>
     <li>
         <a href="https://martinfowler.com/books/continuousDelivery.html">Continuous Delivery</a>
-    </li>
-    <li>
-        <a href="https://www.amazon.ca/Learning-Continuous-Integration-Jenkins-Second/dp/1788479351">Learning Continuous Integration with Jenkins</a>
     </li>
 </ol>
 </p>
@@ -210,19 +286,20 @@ I will be using a series of textbooks to teach this course:
 <th BGCOLOR="WHITE">1
 <td BGCOLOR="WHITE">Sept. 1
 <td BGCOLOR="WHITE" rowspan="1">
-<p style="font-size:150%;color: #ffffff; background-color: #000000;text-align:center"><strong> Course started in the 1st of Septmber, 2022</strong></p>
-<strong>Course info: Introduction, DevOps Culture and Practices. </strong>
+<p style="font-size:150%;color: #ffffff; background-color: #000000;text-align:center"><strong> Course started in the 31st of August, 2023</strong></p>
+<strong>Introduction, logistics, DevOps Culture, and Practices. </strong>
 
 </br> <!-- content -->
-- When the term is introduced and how does it work!</br>
-- Test-Driven Desing</br>
-- Collecting feedback from users </br>
+- Who is the instructor of this course?
+- Who are the people in my team?
+- Labs, Quizzes, Final Project, etc. 
+- Software Delivery in the past, today and future!</br>
+- Traditional software development is dead!</br>
 - Three axes of the DevOps movement </br>
-- How do Continues Integration (CI) and Continuous delivery (CD) work? </br>
-- Implementing CI and CD </br>
 <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-<center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/Eb1s1LA8yjFEuR22xWqsYAsBWAWrzIDd3FzQawqdkcJyhQ?e=U8GwqZ">Lecture_01</a></br>
-        <a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EUJYx4ZB6UZCtWeKdqCBdAgBW1I-Q9N24W28THeqNmZ44A?e=VEsg4v"> Audio_01</a>
+<center>
+    <!-- <a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/Eb1s1LA8yjFEuR22xWqsYAsBWAWrzIDd3FzQawqdkcJyhQ?e=U8GwqZ">Lecture_01</a></br>
+    <a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EUJYx4ZB6UZCtWeKdqCBdAgBW1I-Q9N24W28THeqNmZ44A?e=VEsg4v"> Audio_01</a> -->
 </center>
     
 
@@ -264,9 +341,9 @@ I will be using a series of textbooks to teach this course:
 - Discarding local changes </br>
 - Restoring a file to an earlier version </br>
 <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-<center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/ERgeL2LTAHdGl90ldtsmEKUBufde1XBfEfYyHAGsrl3Z2Q?e=XWEHH5">Lecture_02</a><center></br>
+<!-- <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/ERgeL2LTAHdGl90ldtsmEKUBufde1XBfEfYyHAGsrl3Z2Q?e=XWEHH5">Lecture_02</a><center></br>
 <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/ETe2b0fSqSNAqHpVM7Gv7qMBwM0FxYnzm4JPdo8YEW4D1Q?e=78y63z">Lecture_03</a><center></br>
-<center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/ERlf-we4su9MtPi6LKa9ljIBQw52_VhfO0F6x8XuIzBjZw?e=P85Qdj"> Audio_03</a></center></br>
+<center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/ERlf-we4su9MtPi6LKa9ljIBQw52_VhfO0F6x8XuIzBjZw?e=P85Qdj"> Audio_03</a></center></br> -->
 </br>
 
 <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
@@ -313,10 +390,10 @@ I will be using a series of textbooks to teach this course:
 <a href="https://mcgill-my.sharepoint.com/:p:/g/personal/majid_babaei_mcgill_ca/EVnTNEQm4t1CqBBY53nkct0B34tJlA8FH0JqgTLdD_vD1Q?e=z2Nvnp">Presentation_02</a></br>
 
 <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-<center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EUiv_Ra2nSpIqMixT82hZGgB8A-fX4FLGDMIK_fzagZ_xw?e=BxWkNe">Lecture_04</a><center></br>
+<!-- <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EUiv_Ra2nSpIqMixT82hZGgB8A-fX4FLGDMIK_fzagZ_xw?e=BxWkNe">Lecture_04</a><center></br>
 <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EfDGYE0VrqlBgHtoBuWoOFcBkyCEiKaKRxZs_YoDjkRAng?e=fRtiab">Audio_04</a></center></br>
 <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EVcLCV3JwnVJuzR9z53Rlp4BLDgZSbLlm3zKAsspar-z3Q?e=REvvjf">Lecture_05</a><center></br>
-<center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EZISBk4YfiJNobVDqdc5NYMBrgpD-vTkHhpmY6Cy2hEKag?e=dHlVoG">Audio_05</a></center></br>
+<center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EZISBk4YfiJNobVDqdc5NYMBrgpD-vTkHhpmY6Cy2hEKag?e=dHlVoG">Audio_05</a></center></br> -->
 <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
 <center>GitLab Cookbook:<br>Chapters: 1, 2</center>
 
@@ -338,8 +415,8 @@ I will be using a series of textbooks to teach this course:
     - Best practices for code review</br>
     - Some Examples</br>
     <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-    <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EUR251p4NsFAov_DBJLtg88BobcACbcD5qhHac_3VyVb3w?e=KPtoXH">Lecture_06</a><center></br>
-    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EfMy-4OIlOFPl0PpCb89-rwBHWv9g_dJQinmeKttbR4Upg?e=4fSNpf">Audio_06</a></center></br>
+    <!-- <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EUR251p4NsFAov_DBJLtg88BobcACbcD5qhHac_3VyVb3w?e=KPtoXH">Lecture_06</a><center></br>
+    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EfMy-4OIlOFPl0PpCb89-rwBHWv9g_dJQinmeKttbR4Upg?e=4fSNpf">Audio_06</a></center></br> -->
     <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
     <center>Code Review Guide: <br>Chapters: 1, 2, and 3</center><br>
     <center>Gerrit Code Review: <br>Chapter: 1</center><br>
@@ -366,10 +443,10 @@ I will be using a series of textbooks to teach this course:
     - Working with Topics </br>
     - Working with Stable Branches</br>
     <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-    <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EeVmJ_tgLStFt173QnYS15cBbLCyMWqYcBx7HQEBP0T5Cg?e=k5Y0Fj">Lecture_07</a><center></br>
+    <!-- <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EeVmJ_tgLStFt173QnYS15cBbLCyMWqYcBx7HQEBP0T5Cg?e=k5Y0Fj">Lecture_07</a><center></br>
     <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/ERcpgppQd75HvfJMvy181iIB_T9MiEAIOOHwi_7rv-EJEw?e=0KcV1R">Audio_07</a></center></br>
     <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EbRFGN8axIpHlf1yuIhK1TkBe9spHX0jwuoqFiMr6vFabg?e=lYSoJj">Lecture_08</a><center></br>
-    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EQrnh0rHSetLuC0vqHOx6MgBeEAcbEYHwKsf5Ao8d2_MMw?e=m3R3dM">Audio_08</a></center></br>
+    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EQrnh0rHSetLuC0vqHOx6MgBeEAcbEYHwKsf5Ao8d2_MMw?e=m3R3dM">Audio_08</a></center></br> -->
     <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
     <center>Code Review Guide: <br>Chapters: 1, 2, and 3</center><br>
     <center>Gerrit Code Review: <br>Chapter: 1</center><br>
@@ -399,10 +476,10 @@ I will be using a series of textbooks to teach this course:
     - Subtarget Builds</br>
     - The Problem with Bad Dependencies (Missing, Unwanted, and Circular Dependencies)</br>
     <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-    <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EbhDgf_lcKBDmww69DAJ4J8B5GA2Z--CmFez_-Kd4XllUA?e=KMeEED">Lecture_09</a><center></br>
+    <!-- <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EbhDgf_lcKBDmww69DAJ4J8B5GA2Z--CmFez_-Kd4XllUA?e=KMeEED">Lecture_09</a><center></br>
     <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EZ0MvU9yzjxGgyV7y0Qqo54Bj_KT_ksPgm8Ej5XaKNkVLA?e=86hr2n">Audio_09</a></center></br>
     <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EZ920lsD_utKr6jvvlNjcO8BPPn1ImqnL-wfIQwbwzetDw?e=wD5Gqg">Lecture_10</a><center></br>
-    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EdAmrZEnZFlMtk45LauENnYBhRZao9R_GlCUWdkaN1ZQig?e=96ZmGW">Audio_10</a></center></br>
+    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EdAmrZEnZFlMtk45LauENnYBhRZao9R_GlCUWdkaN1ZQig?e=96ZmGW">Audio_10</a></center></br> -->
     <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
     <center>Software Build Systems: <br>Chapters: 1, 2, and 3</center><br>
     </tr>
@@ -447,8 +524,8 @@ I will be using a series of textbooks to teach this course:
     [Taken] <del>What is a docker container and its architecture? Where does it apply in DevOps? [A quick demo to show how it is used in a small project]</del></br>
     [Taken] <del>What are <i>Docker Based Build Systems</i>? Compare them with traditional build systems. [A quick demo to show how they can be applied in a small project]</del></br>
     <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-    <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EXHeebZ2VsZKu1GdRO8zNTwBRr5Opp_ViDLvdIsMwfUJTg?e=xjociV">Lecture_11</a><center></br>
-    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EZRg36GrNppJj9QtIg1cTzQBKWq2NbAizQks-MECXHIo8Q?e=Wa3WX5">Audio_11</a></center></br>
+    <!-- <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EXHeebZ2VsZKu1GdRO8zNTwBRr5Opp_ViDLvdIsMwfUJTg?e=xjociV">Lecture_11</a><center></br>
+    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EZRg36GrNppJj9QtIg1cTzQBKWq2NbAizQks-MECXHIo8Q?e=Wa3WX5">Audio_11</a></center></br> -->
     <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
     <center>Static Program Analysis: <br>Chapter: 1</center><br>
     <center>Advanced Static Analysis for C++</center><br>
@@ -478,9 +555,9 @@ I will be using a series of textbooks to teach this course:
     <strong>Presentation Session 2.5 (1 TIME SLOT) </strong></br>
     [Taken] <del>How to test Docker Images in the cloud? How it can be integrated it into a DevOps project? [with a short demo]</del></br>
     <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-    <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/Ed2WvGW-Rv5CqY5eTmDyU3oBLSB-oqk-xNZUsZEgyJyTOg?e=no9wRG">Lecture_12</a><center></br>
+    <!-- <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/Ed2WvGW-Rv5CqY5eTmDyU3oBLSB-oqk-xNZUsZEgyJyTOg?e=no9wRG">Lecture_12</a><center></br>
     <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/ESXpUXx9CEZJn4cBRU8p5ZoBx-gqIVnaabfqApL9MGgyiw?e=2mYbGx">Audio_12.1</a></center></br>
-    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EfgjiLHcQvFFhlUY_QFs0KgBc-bOAX4I6W5BtkeVv4HDsg?e=v0a14J">Audio_12.2</a></center></br>
+    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EfgjiLHcQvFFhlUY_QFs0KgBc-bOAX4I6W5BtkeVv4HDsg?e=v0a14J">Audio_12.2</a></center></br> -->
     <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
     <center>Introduction to Software Testing: <br>Parts: 1, 2, 3, and 4</center><br>
     </tr>
@@ -503,9 +580,9 @@ I will be using a series of textbooks to teach this course:
     [Taken] <del>What are the key challenges of testing distributed systems and how can we deal with these challenges?</del></br>
     [Taken] <del>The Comparison of the best Agile Testing Tools: <i>Worksoft</i>, <i>PractiTest</i>, <i>JunoOne</i>, <i>QMetry</i>, <i>Testiny</i>, <i>JIRA</i>, <i>Selenium WebDriver</i></del></br>
     <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-    <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EZaePdGvlMJLrtH0qm-Vg2EBAD09oKnrq6CIGQBQOwgPPw?e=VC4zTk">Lecture_13</a><center></br>
+    <!-- <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EZaePdGvlMJLrtH0qm-Vg2EBAD09oKnrq6CIGQBQOwgPPw?e=VC4zTk">Lecture_13</a><center></br>
     <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/EU69QBEabWVPk7GzLfuLptABqvyaCI37iHMbu8rduUQxgA?e=atYjiI">Audio_13.1</a><center></br>
-    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/ERICMQ84GRZGqUdHED91Dp0B9r0H6wJRiR7_lH5goeIZTg?e=G8LDgg">Audio_13.2</a><center></br>            
+    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/ERICMQ84GRZGqUdHED91Dp0B9r0H6wJRiR7_lH5goeIZTg?e=G8LDgg">Audio_13.2</a><center></br>             -->
     <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
     <center>Software Build Systems: <br>Chapters: 1, 2, and 3</center><br>
     </tr>
@@ -531,8 +608,8 @@ I will be using a series of textbooks to teach this course:
     - Write Automated Developer Tests</br>
     - Make Sure All Tests and Inspections Passed</br>
     <td BGCOLOR="WHITE" rowspan="1"> <!-- lecture slides -->
-    <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EWsVjPVu1WBMrSETGlUmaukBBXEEUUGoGt5wJcXgXROHjw?e=iHfReE">Lecture_14</a><center></br>
-    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/ESWTOzAXQeJIqFMtiSY_h1oBDEVV-Qr1OAaE3gakDXsgrw?e=I5sStZ">Audio_14</a><center></br>
+    <!-- <center><a href="https://mcgill-my.sharepoint.com/:b:/g/personal/majid_babaei_mcgill_ca/EWsVjPVu1WBMrSETGlUmaukBBXEEUUGoGt5wJcXgXROHjw?e=iHfReE">Lecture_14</a><center></br>
+    <center><a href="https://mcgill-my.sharepoint.com/:u:/g/personal/majid_babaei_mcgill_ca/ESWTOzAXQeJIqFMtiSY_h1oBDEVV-Qr1OAaE3gakDXsgrw?e=I5sStZ">Audio_14</a><center></br> -->
     <td BGCOLOR="WHITE" rowspan="1"> <!-- textbook section -->
     <center>Continuous Delivery: <br>Chapters: 1, 2, and 3</center><br>
     </tr>
@@ -563,7 +640,7 @@ I will be using a series of textbooks to teach this course:
     <strong>Presentation Session 3.5 (2 TIME SLOT) </strong></br>
     [Taken] <del>How does Kubernetes work? [with a short demo]</del></br>
     [Taken] <del>How does Jenkins work? [with a short demo]</del></br>
-    <td BGCOLOR="WHITE" rowspan="1"> lecture slides
+    <td BGCOLOR="WHITE" rowspan="1">
     <!-- <center><a href="">Lecture_18</a><center></br> -->
     <!-- <center><a href="">Lecture_19</a><center></br> -->
     <td BGCOLOR="WHITE" rowspan="1"> textbook section
