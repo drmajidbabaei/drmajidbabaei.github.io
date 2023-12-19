@@ -1413,22 +1413,23 @@ div.gallery {
 .ourColleague {
     margin-top: 40px;
     margin-bottom: 44px;
-  }
-  .ourColleague-info {
+}
+
+.ourColleague-info {
     position: relative;
     border: 5px solid #dfe2e5a2;
     border-radius: 10px;
     margin-top: 40px;
     padding-bottom: 22px;
     text-align: center;
-  }
-  .ourColleague-info img {
+}
+
+.ourColleague-info img {
     border-radius: 60%;
     height: 150px;
     margin: -66px 0 22px 0;
     vertical-align: top;
-  }
-
+}
 
   /*
   ========================================
