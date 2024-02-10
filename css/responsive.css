@@ -372,6 +372,11 @@
         margin-left: 0;
         width: 100%;
     }
+    .introduction h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
     .introduction .owl-pagination {
         bottom: 15px;
     }
@@ -401,9 +406,9 @@
         background: url(../images/black-transparent.png) repeat
     }
     .introduction h2 {
-        font-size: 35px;
-        line-height: 40px;
-        margin-bottom: 16px;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
     }
     .introduction span.title {
         font-size: 15px;
@@ -418,6 +423,9 @@
         background: none
     }
     .ourColleague {
+        display: none
+    }
+    .longBio {
         display: none
     }
     .shortInfo{

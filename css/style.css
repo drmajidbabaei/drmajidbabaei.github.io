@@ -51,6 +51,9 @@ body.blog {
 .shortInfo{
     display: none;
 }
+.longBio{
+    display: block;
+}
 a {
     color: #545454;
     text-decoration: none;
