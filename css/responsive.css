@@ -157,6 +157,14 @@
     .blog-left .row .blog-list:nth-child(2n) { 
         float: right;
     }
+    .longInfo {
+        display: none
+    }
+    .shortInfo{
+        display: block;
+        margin: auto;
+        padding: auto;
+    }
 }
 @media screen and (max-width: 768px) {
     body {
@@ -252,6 +260,14 @@
     }
     .ourColleague-info {
         display: none
+    }
+    .longInfo {
+        display: none
+    }
+    .shortInfo{
+        display: block;
+        margin: auto;
+        padding: auto;
     }
     nav.active {
         display: block;
