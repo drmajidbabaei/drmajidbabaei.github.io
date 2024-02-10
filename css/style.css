@@ -51,7 +51,7 @@ body.blog {
 .shortInfo{
     display: none;
 }
-.longBio{
+.longInfo{
     display: block;
 }
 a {
