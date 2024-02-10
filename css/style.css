@@ -48,6 +48,9 @@ body.blog {
     overflow-y: scroll;
     overflow-x: auto;
 }
+.shortInfo{
+    display: none;
+}
 a {
     color: #545454;
     text-decoration: none;
@@ -167,7 +170,6 @@ h1, h2, h3, h4, h5 {
     font-weight: 400;
     font-family: 'Oswald', sans-serif;
     color: #000;
-    text-transform: uppercase;
 }
 h1 {
     font-style: italic;
@@ -319,7 +321,6 @@ h5 {
 /* Use clearfix class on parent to clear nested columns,
     or wrap each row of columns in a <div class="row"> */
 .clearfix:before, .clearfix:after, .row:before, .row:after {
-    content: '\0020';
     display: block;
     overflow: hidden;
     visibility: hidden;
@@ -423,13 +424,13 @@ ul {
 }
 .menu nav a {
     display: block;
-    padding: 13px 0;
+    padding: 9px 0;
     text-align: left;
     outline: none;
-    margin: 0 30px;
+    margin: 0 20px 0px 10px;
     border-bottom: 1px solid #333333;
     font-family: 'Oswald', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     color: #FFF;
     text-transform: uppercase;
@@ -614,7 +615,7 @@ a.totop-link {
     text-transform: uppercase;
     line-height: 50px;
     padding-bottom: 0;
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 35px
 }
 .introduction .inner {
@@ -1354,18 +1355,28 @@ div.gallery {
     float: left;
     width: 24.99999%;
   }
+
+  .desktop-only{
+    display: block;
+  }
   
   @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.99999%;
       margin: 6px 0;
     }
+    .desktop-only{
+        display: none;
+      }
   }
   
   @media only screen and (max-width: 500px) {
     .responsive {
       width: 100%;
     }
+    .desktop-only{
+        display: none;
+      }
   }
   
   .clearfix:after {

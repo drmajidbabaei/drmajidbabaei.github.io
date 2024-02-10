@@ -39,7 +39,7 @@
         opacity: 1;
     }
     .menu nav {
-        top: 180px;
+        top: 220px;
     }
     .social {
         top: 535px;
@@ -234,7 +234,7 @@
         font-size: 23px;
         color: #FFF;
     }
-    .menu-link:hover {
+    .menu-link:hov  er {
         color: #999;
     }
     .menu-link:before {
@@ -248,6 +248,9 @@
         border-bottom: none
     }
     .menu nav {
+        display: none
+    }
+    .ourColleague-info {
         display: none
     }
     nav.active {
@@ -285,7 +288,7 @@
     }
 
     .experience-details .col-3, .education-con .col-3 {
-        width: 30%
+        width: 100%
     }
     .slideshow figure {
         width: auto;
@@ -403,12 +406,9 @@
         margin-bottom: 16px;
     }
     .introduction span.title {
-        display: block;
-        font-size: 11px;
-        color: #FFF;
+        font-size: 15px;
+        color: #ffb400;
         padding: 10px 0;
-        border-bottom: 1px solid #fff;
-        border-top: 1px solid #fff;
     }
     .button {
         width: auto;
@@ -416,6 +416,14 @@
     }
     .about {
         background: none
+    }
+    .ourColleague {
+        display: none
+    }
+    .shortInfo{
+        display: block;
+        margin: auto;
+        padding: auto;
     }
     .about .inner {
         width: auto
@@ -461,7 +469,7 @@
         margin: 10px 0 0 0
     }
     .contact-details .col-2 {
-        width: 15%
+        width: 100%
     }
     .email {
         margin-bottom: 0;
