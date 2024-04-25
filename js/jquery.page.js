@@ -71,6 +71,7 @@ var pagetitle=$(document).find("title").text();
 					$('#link_DOI').removeClass('active');
 					$('#link_projects').removeClass('active');
 					$('#link_ourteam').removeClass('active');
+					$('#link_service').removeClass('active');
 					$('#link_ourapproach').removeClass('active');
 					$('#link_teaching').removeClass('active');
 					$('#link_myteam').removeClass('active');
