@@ -1387,6 +1387,67 @@ div.gallery {
     display: table;
     clear: both;
   }
+/* ==========================================================================
+   #normal lists
+   ========================================================================== */
+.normal ul{
+    list-style-type: none; /* Remove default bullets/numbers */
+    padding: 0;
+    margin: 0;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    counter-reset: list-counter 1; /* Start the counter from 1 */
+}
+.normal a {
+    color: #1705e7;
+}
+.normal li {
+    counter-increment: list-counter; /* Increment counter for each li */
+    padding: 15px 20px 15px 60px; /* Add left padding to make room for the number */
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    cursor: pointer;
+    position: relative; /* Enable positioning for the number */
+}
+
+.normal li:last-child {
+    border-bottom: none; /* Remove border on the last item */
+}
+
+.normal li:hover {
+    background-color: #e0e0e0; /* Background on hover */
+    /* padding-left: 30px; Slight padding animation on hover */
+}
+
+.normal li:active {
+    background-color: #ccc; /* Background on click */
+}
+
+/* Styling the number */
+.normal li::before {
+    content: counter(list-counter); /* Use the counter */
+    position: absolute;
+    left: 15px; /* Align the number to the left of the content */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4caf50; /* Number background color */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 /* ==========================================================================
    #ourteam images

@@ -1,8 +1,6 @@
-body{
-    background-color: #f1f6ff;
-  }
-  #news-slider{
+#news-slider{
       margin-top: 80px;
+      background-color: #f1f6ff;
   }
   .post-slide{
       background: #fff;
@@ -15,17 +13,26 @@ body{
       position: relative;
       overflow: hidden;
       border-radius: 10px;
-      margin: -12px 15px 8px 15px;
-      margin-left: -10px;
+      margin: 0px;
+      display: block;
+      margin: auto;
   }
   .post-slide .post-img img{
-      width: 100%;
-      height: auto;
-      transform: scale(1,1);
+      /* width: 50%; */
+      /* height: auto; */
+      transform: scale(1.5,1.5);
       transition:transform 0.2s linear;
-  }
+      display: block;
+      margin: auto;
+      min-height: 100px;  /* Ensures a reasonable minimum height */
+      max-height: 200px;  /* Prevents it from getting too tall */
+      padding: 20px;      /* Adds some internal spacing for content */
+      overflow: auto;     /* Allows scrolling if content exceeds max height */
+}
   .post-slide:hover .post-img img{
-      transform: scale(1.1,1.1);
+      transform: scale(2.5,2.5);
+      display: block;
+      margin: auto;
   }
   .post-slide .over-layer{
       width:100%;
