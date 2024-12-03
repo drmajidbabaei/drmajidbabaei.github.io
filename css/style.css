@@ -63,7 +63,7 @@ a {
     -o-transition-duration: .2s;
 }
 a:hover {
-    color: #000;
+    color: #2200ff;
 }
 ::selection {
     color: #000;
